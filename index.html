@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        font-weight: 600;
+        background-image: url(image/bg.jpg);
+        background-size: 100%;
+        margin: 0;
+      }
+      form {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(223, 222, 222, 0.9);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+      }
+      div {
+        margin: 10px;
+        padding: 5px;
+        padding-right: 50px;
+        background-color: rgba(255, 0, 0, 0.4);
+        clear: both;
+        text-align: right;
+        line-height: 35px;
+      }
+      label {
+        padding-left: 10px;
+        float: left;
+      }
+      input {
+        margin-top: 10px;
+        height: 20px;
+      }
+      select {
+        width: 170px;
+      }
+      textarea {
+        height: 50px;
+      }
+      div button {
+        margin-right: 35px;
+        background-color: brown;
+        color: aliceblue;
+      }
+      #license {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Реєстрація нового користуача</legend>
+        <div>
+          <label for="user-name">Повне імя:</label>
+          <input id="user-name" type="text" name="fullname" />
+        </div>
+        <div>
+          <label for="user-mail">Email:</label>
+          <input id="ueser-mail" type="email" name="email" required />
+        </div>
+        <div>
+          <label for="user-pass">Пароль:</label>
+          <input id="user-pass" type="password" name="password" />
+        </div>
+        <div>
+          <label for="user-pass-rep">Пароль ще раз:</label>
+          <input id="user-pass-rep" type="password" name="password" />
+        </div>
+
+        <div>
+          <label for="">Стать:</label>
+          <input id="user-male" type="radio" name="sex" checked />чоловіча
+          <label for="user-male"></label>
+          <input id="user-female" type="radio" name="sex" />жіноча
+          <label for="user-female"></label>
+        </div>
+        <div>
+          <label for="user-age">Вік:</label>
+          <input id="user-age" type="tel" name="userAge" />
+        </div>
+        <div>
+          <label for="userCourse">Курс:</label>
+          <select name="course" id="userCourse">
+            <option value="choice" selected>-=Виберіть курс=-</option>
+            <option value="FE">Front-End</option>
+            <option value="BE">Back-End</option>
+            <option value="PM">Project Management</option>
+            <option value="QA">QA Manual</option>
+          </select>
+        </div>
+        <div>
+          <label for="user-adress">Повна адреса:</label>
+          <textarea
+            id="user-adress"
+            name="text"
+            placeholder="Країна, регіон, місто/селище, вулиця"
+          ></textarea>
+        </div>
+        <div id="license">
+          <input type="checkbox" name="license" value="yes" /> Я погоджуюсь з
+          обробкою персональних даних
+        </div>
+        <div>
+          <button type="reset">Очистити форму</button>
+          <button type="submit">Зареєструватися</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
